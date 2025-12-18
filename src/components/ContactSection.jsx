@@ -5,8 +5,8 @@ import {
     MapPin,
     Phone,
     Send,
-    Twitch,
-    Twitter,
+    Blogger,
+    Github,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -44,47 +44,44 @@ export const ContactSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
                         <h3 className="text-2xl font-semibold mb-6">
-                            {" "}
                             Contact Information
                         </h3>
 
                         <div className="space-y-6 justify-center">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Mail className="h-6 w-6 text-primary" />{" "}
+                                    <Mail className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4 className="font-medium"> Email</h4>
                                     <a
-                                        href="mailto:hello@gmail.com"
-                                        className="text-muted-foreground hover:text-primary transition-colors"
-                                    >
-                                        hello@gmail.com
+                                        href="mailto:rifqiadrianto55@gmail.com"
+                                        className="text-muted-foreground hover:text-primary transition-colors">
+                                        rifqiadrianto55@gmail.com
                                     </a>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Phone className="h-6 w-6 text-primary" />{" "}
+                                    <Phone className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4 className="font-medium"> Phone</h4>
                                     <a
-                                        href="tel:+11234567890"
-                                        className="text-muted-foreground hover:text-primary transition-colors"
-                                    >
-                                        +1 (123) 456-7890
+                                        href="tel:+6282332061664"
+                                        className="text-muted-foreground hover:text-primary transition-colors">
+                                        +62 823-3206-1664
                                     </a>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <MapPin className="h-6 w-6 text-primary" />{" "}
+                                    <MapPin className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4 className="font-medium"> Location</h4>
                                     <a className="text-muted-foreground hover:text-primary transition-colors">
-                                        Vancouver, BC, Canada
+                                        Jember, East Java, Indonesia
                                     </a>
                                 </div>
                             </div>
@@ -97,13 +94,13 @@ export const ContactSection = () => {
                                     <Linkedin />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <Twitter />
+                                    <Blogger />
                                 </a>
                                 <a href="#" target="_blank">
                                     <Instagram />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <Twitch />
+                                    <Github />
                                 </a>
                             </div>
                         </div>
@@ -111,17 +108,14 @@ export const ContactSection = () => {
 
                     <div
                         className="bg-card p-8 rounded-lg shadow-xs"
-                        onSubmit={handleSubmit}
-                    >
+                        onSubmit={handleSubmit}>
                         <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
                         <form className="space-y-6">
                             <div>
                                 <label
                                     htmlFor="name"
-                                    className="block text-sm font-medium mb-2"
-                                >
-                                    {" "}
+                                    className="block text-sm font-medium mb-2">
                                     Your Name
                                 </label>
                                 <input
@@ -130,16 +124,14 @@ export const ContactSection = () => {
                                     name="name"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                                    placeholder="Pedro Machado..."
+                                    placeholder="Nama anda..."
                                 />
                             </div>
 
                             <div>
                                 <label
                                     htmlFor="email"
-                                    className="block text-sm font-medium mb-2"
-                                >
-                                    {" "}
+                                    className="block text-sm font-medium mb-2">
                                     Your Email
                                 </label>
                                 <input
@@ -148,16 +140,14 @@ export const ContactSection = () => {
                                     name="email"
                                     required
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                                    placeholder="john@gmail.com"
+                                    placeholder="abc123@gmail.com"
                                 />
                             </div>
 
                             <div>
                                 <label
                                     htmlFor="message"
-                                    className="block text-sm font-medium mb-2"
-                                >
-                                    {" "}
+                                    className="block text-sm font-medium mb-2">
                                     Your Message
                                 </label>
                                 <textarea
