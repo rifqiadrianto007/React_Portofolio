@@ -1,5 +1,3 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
-
 const experience = [
     {
         id: 1,
