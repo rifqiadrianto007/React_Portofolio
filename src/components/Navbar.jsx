@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
     { name: "Home", href: "#hero" },
@@ -54,14 +55,16 @@ export const Navbar = () => {
     return (
         <nav
             className={cn(
-                "fixed top-0 left-0 right-0 w-full z-50 transition-[padding,background-color,box-shadow] duration-300",
+                "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
                 isScrolled ? "py-3 bg-background/70 backdrop-blur-lg shadow-sm border-b border-border/40"
                     : "py-5 bg-background/50 backdrop-blur-md"
             )}>
             <div className="container mx-auto px-4 flex items-center justify-between">
+                {/* Logo */}
                 <a
                     className="text-xl font-bold text-primary flex items-center"
-                    href="#hero" onClick={(e) => {
+                    href="#hero"
+                    onClick={(e) => {
                         e.preventDefault();
                         handleNavClick("#hero");
                     }}>
@@ -71,39 +74,50 @@ export const Navbar = () => {
                     </span>
                 </a>
 
-                {/* desktop nav */}
-                <div className="hidden md:flex space-x-8">
-                    {navItems.map((item, key) => {
-                        const isActive = activeSection === item.href.substring(1);
-                        return (
-                            <a
-                                key={key}
-                                href={item.href}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleNavClick(item.href);
-                                }}
-                                className={cn(
-                                    "relative text-foreground/80 hover:text-primary transition-colors duration-300",
-                                    // styling underline active section
-                                    "after:content-[''] after:absolute after:left-0 after:bottom-1 after:w-0 after:h-0.5 after:bg-primary after:transition-[padding,background-color,box-shadow] after:duration-300",
-                                    "hover:after:w-full",
-                                    isActive && "text-primary after:w-full"
-                                )}>
-                                {item.name}
-                            </a>
-                        )
-                    })}
+                {/* Desktop Nav + Theme Toggle */}
+                <div className="hidden md:flex items-center gap-8">
+                    <div className="flex space-x-8">
+                        {navItems.map((item, key) => {
+                            const isActive = activeSection === item.href.substring(1);
+                            return (
+                                <a
+                                    key={key}
+                                    href={item.href}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleNavClick(item.href);
+                                    }}
+                                    className={cn(
+                                        "relative text-foreground/80 transition-all duration-300 pb-2",
+                                        "hover:text-primary hover:-translate-y-0.5",
+                                        // styling underline active section
+                                        "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-1",
+                                        "after:bg-linear-to-r after:from-primary after:via-purple-500 after:to-primary",
+                                        "after:rounded-full after:transition-all after:duration-300",
+                                        "hover:after:w-full",
+                                        isActive && "text-primary after:w-full -translate-y-0.5"
+                                    )}>
+                                    {item.name}
+                                </a>
+                            )
+                        })}
+                    </div>
+                    <ThemeToggle isScrolled={isScrolled} />
                 </div>
 
-                {/* mobile nav */}
-                <button
-                    onClick={() => setIsMenuOpen((prev) => !prev)}
-                    className="md:hidden p-2 text-foreground z-50"
-                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-                >
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-                </button>
+                {/* Mobile: Theme Toggle + Menu Button */}
+                <div className="md:hidden flex items-center gap-2">
+                    <ThemeToggle isScrolled={isScrolled} />
+                    <button
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                        className="p-2 text-foreground z-50 rounded-full hover:bg-primary/10 transition-colors"
+                        aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+                    >
+                        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
+
+                {/* Mobile Menu */}
                 <div
                     className={cn(
                         "fixed top-0 left-0 w-screen h-dvh", "bg-background/95 backdrop-blur-md",
@@ -120,8 +134,9 @@ export const Navbar = () => {
                                     key={key}
                                     href={item.href}
                                     className={cn(
-                                        "text-foreground/80 hover:text-primary transition-colors duration-300 text-center",
-                                        isActive && "text-primary font-semibold"
+                                        "text-foreground/80 hover:text-primary transition-all duration-300 text-center",
+                                        "hover:-translate-y-0.5",
+                                        isActive && "text-primary font-semibold scale-110"
                                     )}
                                     onClick={(e) => {
                                         e.preventDefault();
