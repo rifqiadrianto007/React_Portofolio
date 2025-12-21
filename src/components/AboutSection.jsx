@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, BrainCircuit } from "lucide-react";
 
 export const AboutSection = () => {
     return (
@@ -15,17 +15,15 @@ export const AboutSection = () => {
                         </h3>
 
                         <p className="text-muted-foreground">
-                            {/* perbarui dan sesuaikan */}
-                            With over 5 years of experience in web development, I specialize
-                            in creating responsive, accessible, and performant web
-                            applications using modern technologies.
+                            With over 2 years of experience in web development,
+                            I specialize in creating responsive, efficient web applications
+                            that are compatible with various needs and modern technologies.
                         </p>
 
                         <p className="text-muted-foreground">
-                            I'm passionate about creating elegant solutions to complex
-                            problems, and I'm constantly learning new technologies and
-                            techniques to stay at the forefront of the ever-evolving web
-                            landscape.
+                            I am skilled at leading and creating efficient solutions to complex
+                            problems, and I continue to learn new technologies and techniques
+                            to stay competitive in the world of web development.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -50,7 +48,7 @@ export const AboutSection = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg"> Web Development</h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications with
+                                        Creating responsive and efficient websites with severals
                                         modern frameworks.
                                     </p>
                                 </div>
@@ -64,7 +62,7 @@ export const AboutSection = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Project Management</h4>
                                     <p className="text-muted-foreground">
-                                        Leading projects from conception to completion with agile
+                                        Leading team projects from conception to completion with agile
                                         methodologies.
                                     </p>
                                 </div>
@@ -74,14 +72,14 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary" />
+                                    <BrainCircuit className="h-6 w-6 text-primary" />
                                 </div>
 
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Project Management</h4>
+                                    <h4 className="font-semibold text-lg">Data Trainer</h4>
                                     <p className="text-muted-foreground">
-                                        Leading projects from conception to completion with agile
-                                        methodologies.
+                                        Training and testing data to develop websites that support
+                                        AI-based model.
                                     </p>
                                 </div>
                             </div>
