@@ -42,14 +42,6 @@ export const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    useEffect(() => {
-        if (isMenuOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "unset";
-        }
-    }, [isMenuOpen]);
-
     const handleNavClick = (href) => {
         setIsMenuOpen(false);
         // smooth scroll
@@ -62,7 +54,7 @@ export const Navbar = () => {
     return (
         <nav
             className={cn(
-                "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
+                "fixed top-0 left-0 right-0 w-full z-50 transition-[padding,background-color,box-shadow] duration-300",
                 isScrolled ? "py-3 bg-background/70 backdrop-blur-lg shadow-sm border-b border-border/40"
                     : "py-5 bg-background/50 backdrop-blur-md"
             )}>
@@ -93,7 +85,8 @@ export const Navbar = () => {
                                 }}
                                 className={cn(
                                     "relative text-foreground/80 hover:text-primary transition-colors duration-300",
-                                    "after:content-[''] after:absolute after:left-0 after:bottom-1 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
+                                    // styling underline active section
+                                    "after:content-[''] after:absolute after:left-0 after:bottom-1 after:w-0 after:h-0.5 after:bg-primary after:transition-[padding,background-color,box-shadow] after:duration-300",
                                     "hover:after:w-full",
                                     isActive && "text-primary after:w-full"
                                 )}>
@@ -113,10 +106,9 @@ export const Navbar = () => {
                 </button>
                 <div
                     className={cn(
-                        "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
-                        "transition-all duration-300 md:hidden",
-                        isMenuOpen
-                            ? "opacity-100 pointer-events-auto"
+                        "fixed top-0 left-0 w-screen h-dvh", "bg-background/95 backdrop-blur-md",
+                        "z-40 flex flex-col items-center justify-center", "transition-all duration-300 md:hidden",
+                        isMenuOpen ? "opacity-100 pointer-events-auto"
                             : "opacity-0 pointer-events-none"
                     )}
                 >
