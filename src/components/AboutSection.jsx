@@ -11,10 +11,11 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Passionate Web Developer & Tech Creator
+                            Passionate Full Stack Web Developer
                         </h3>
 
                         <p className="text-muted-foreground">
+                            {/* perbarui dan sesuaikan */}
                             With over 5 years of experience in web development, I specialize
                             in creating responsive, accessible, and performant web
                             applications using modern technologies.
@@ -33,7 +34,7 @@ export const AboutSection = () => {
                             </a>
 
                             <a
-                                href=""
+                                href="" // linked to gdrive
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 Download CV
                             </a>
@@ -58,17 +59,18 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary" />
+                                    <Briefcase className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                                    <h4 className="font-semibold text-lg">Project Management</h4>
                                     <p className="text-muted-foreground">
-                                        Designing intuitive user interfaces and seamless user
-                                        experiences.
+                                        Leading projects from conception to completion with agile
+                                        methodologies.
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        {/* ganti ke focus job lainnya */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
