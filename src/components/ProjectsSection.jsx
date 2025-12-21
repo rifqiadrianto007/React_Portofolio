@@ -8,7 +8,7 @@ const projects = [
         image: "/projects/SiCekam.webp",
         tags: ["Larevel", "TailwindCSS", "Python"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/SiCeKam",
     },
     {
         id: 2,
@@ -18,100 +18,110 @@ const projects = [
         image: "/projects/Schedulo.webp",
         tags: ["Laravel", "MySQL", "TailwindCSS"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/Schedulo",
     },
     {
         id: 3,
+        title: "SIRECA",
+        description:
+            "Interactive analytics dashboard with data visualization and filtering capabilities.",
+        image: "/projects/projects.jpg",
+        tags: ["Laravel", "Python", "GAN"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/SIRECA_web",
+    },
+    {
+        id: 4,
         title: "SehatIn",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/SehatIn.webp",
         tags: ["C#", "Python"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/Sehat.In",
     },
     {
-        id: 4,
+        id: 5,
         title: "ReFind (Website)",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/ReFindWeb.webp",
         tags: ["HTML", "CSS", "MySQL"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/ReFind",
     },
     {
-        id: 5,
+        id: 6,
         title: "SiBarang",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/SiBarang.webp",
         tags: ["Laravel", "TailwindCSS"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/SiBarang_Web",
     },
     {
-        id: 6,
+        id: 7,
         title: "ReFind App Mobile",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/ReFindApp.webp",
-        tags: ["React", "Typescript", "MySQL"],
+        tags: ["React", "Typescript", "Firebase"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/ReFind-App.",
     },
     {
-        id: 7,
+        id: 8,
         title: "Epic Games (Clone)",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/EpicGames.webp",
         tags: ["HTML", "TailwindCSS"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/EpicGames.Clone",
     },
     {
-        id: 8,
+        id: 9,
         title: "BeriTAU",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/beriTAU.webp",
         tags: ["Laravel", "Bootstrap"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/beriTAU_portal",
     },
     {
-        id: 9,
+        id: 10,
         title: "Books Author Web",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/BooksAuthor.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/BooksAuthor",
     },
     {
-        id: 10,
+        id: 11,
         title: "Queue System",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/HEAP.webp",
         tags: ["Laravel", "Python"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/Sistem-Antrean-HEAP",
     },
     {
-        id: 11,
+        id: 12,
         title: "Memorize Puzzle Game",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/MemorizeGame.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/rifqiadrianto007/Memoryze-Table-Game",
     },
     {
-        id: 12,
+        id: 13,
         title: "Academic Count System",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
@@ -131,7 +141,7 @@ export const ProjectsSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    After studying for approximately one year, I have successfully completed several projects as final assignments for some of my courses.
+                    After studying for approximately two years, I have successfully completed several projects as final assignments for some of my courses.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
