@@ -1,24 +1,39 @@
 const experience = [
     {
         id: 1,
-        title: "SaaS Landing Page",
+        title: "Friendship 2025 Chairman",
         description: "A beautiful landing page app using React and Tailwind.",
-        image: "/experience/experience.jpg",
-        tags: ["React", "TailwindCSS", "Supabase"],
+        image: "/experience/sertif FS.webp",
     },
     {
         id: 2,
-        title: "Orbit Analytics Dashboard",
+        title: "SIRECA Intellectual Property Rights",
         description: "Interactive analytics dashboard with data visualization and filtering capabilities.",
-        image: "/experience/experience.jpg",
-        tags: ["TypeScript", "D3.js", "Next.js"],
+        image: "/experience/HKI Sireca.webp",
     },
     {
         id: 3,
-        title: "E-commerce Platform",
+        title: "MS Office Sertification",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
-        image: "/experience/experience.jpg",
-        tags: ["React", "Node.js", "Stripe"],
+        image: "/experience/Sekolahku.webp",
+    },
+    {
+        id: 4,
+        title: "PKM Competition Participant",
+        description: "Full-featured e-commerce platform with user authentication and payment processing.",
+        image: "/experience/PKM.webp",
+    },
+    {
+        id: 5,
+        title: "Student Leadership Training",
+        description: "Full-featured e-commerce platform with user authentication and payment processing.",
+        image: "/experience/LKMM.webp",
+    },
+    {
+        id: 6,
+        title: "PKM Training Competition",
+        description: "Full-featured e-commerce platform with user authentication and payment processing.",
+        image: "/experience/PKMCen.webp",
     },
 ];
 
@@ -47,14 +62,6 @@ export const ExperienceSection = () => {
                             </div>
 
                             <div className="p-6">
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-
                                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
                                 <p className="text-muted-foreground text-sm mb-4">
                                     {project.description}
