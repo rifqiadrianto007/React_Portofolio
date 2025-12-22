@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "SiCekam",
-        description: "A beautiful landing page app using React and Tailwind.",
+        description: "AI-based web for detecting the number and health condition of chickens.",
         image: "/projects/SiCekam.webp",
         tags: ["Larevel", "TailwindCSS", "Python"],
         demoUrl: "#",
@@ -14,7 +14,7 @@ const projects = [
         id: 2,
         title: "Schedulo",
         description:
-            "Interactive analytics dashboard with data visualization and filtering capabilities.",
+            "Campus activity monitoring, scheduling, and information system.",
         image: "/projects/Schedulo.webp",
         tags: ["Laravel", "MySQL", "TailwindCSS"],
         demoUrl: "#",
@@ -24,7 +24,7 @@ const projects = [
         id: 3,
         title: "SIRECA",
         description:
-            "Interactive analytics dashboard with data visualization and filtering capabilities.",
+            "Sistem restorasi citra menggunakan machine learning berbasing GAN.",
         image: "/projects/SIRECA.webp",
         tags: ["Laravel", "Python", "GAN"],
         demoUrl: "#",
@@ -34,7 +34,7 @@ const projects = [
         id: 4,
         title: "SehatIn",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A web-based application that measures BMI, menstruation, medication recommendations, and nearby health facilities.",
         image: "/projects/SehatIn.webp",
         tags: ["C#", "Python"],
         demoUrl: "#",
@@ -44,7 +44,7 @@ const projects = [
         id: 5,
         title: "ReFind (Website)",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "The ReFind web-based application helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindWeb.webp",
         tags: ["HTML", "CSS", "MySQL"],
         demoUrl: "#",
@@ -54,7 +54,7 @@ const projects = [
         id: 6,
         title: "SiBarang",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A warehouse inventory system integrated with goods flow records.",
         image: "/projects/SiBarang.webp",
         tags: ["Laravel", "TailwindCSS"],
         demoUrl: "#",
@@ -64,7 +64,7 @@ const projects = [
         id: 7,
         title: "ReFind App Mobile",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "The ReFind Android mobile apps that helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindApp.webp",
         tags: ["React", "Typescript", "Firebase"],
         demoUrl: "#",
@@ -74,7 +74,7 @@ const projects = [
         id: 8,
         title: "Epic Games (Clone)",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A fake website of a game provider company called Epic Games, complete with various catalog and purchase features.",
         image: "/projects/EpicGames.webp",
         tags: ["HTML", "TailwindCSS"],
         demoUrl: "#",
@@ -84,7 +84,7 @@ const projects = [
         id: 9,
         title: "BeriTAU",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A news portal that provides a variety of the latest news, complete with filter features by topic and release date.",
         image: "/projects/beriTAU.webp",
         tags: ["Laravel", "Bootstrap"],
         demoUrl: "https://beritauportal-rdk8usby3-rifqiadrianto007s-projects.vercel.app",
@@ -94,7 +94,7 @@ const projects = [
         id: 10,
         title: "Books Author Web",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A library book catalog system integrated with book identification and user borrowing history records.",
         image: "/projects/BooksAuthor.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
         demoUrl: "#",
@@ -104,7 +104,7 @@ const projects = [
         id: 11,
         title: "Queue System",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A queueing system that applies a priority scale based on several aspects, such as members, order type, and order quantity.",
         image: "/projects/HEAP.webp",
         tags: ["Laravel", "Python"],
         demoUrl: "#",
@@ -114,7 +114,7 @@ const projects = [
         id: 12,
         title: "Memorize Puzzle Game",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A simple puzzle memorization game built using Python's pyGames library.",
         image: "/projects/MemorizeGame.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
         demoUrl: "#",
@@ -124,7 +124,7 @@ const projects = [
         id: 13,
         title: "Academic Count System",
         description:
-            "Full-featured e-commerce platform with user authentication and payment processing.",
+            "A system for recommending and predicting student graduation outcomes based on academic, non-academic, and attendance aspects",
         image: "/projects/academic.webp",
         tags: ["Laravel", "Python", "Matplotlib"],
         demoUrl: "#",
