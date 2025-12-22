@@ -1,36 +1,42 @@
 const experience = [
     {
         id: 1,
-        title: "Friendship 2025 Chairman",
+        title: "Abdidaya Ormawa 2025",
         description: "A beautiful landing page app using React and Tailwind.",
         image: "/experience/sertif FS.webp",
     },
     {
         id: 2,
-        title: "SIRECA Intellectual Property Rights",
+        title: "Friendship 2025",
+        description: "A beautiful landing page app using React and Tailwind.",
+        image: "/experience/sertif FS.webp",
+    },
+    {
+        id: 3,
+        title: "Intellectual Property Rights",
         description: "Interactive analytics dashboard with data visualization and filtering capabilities.",
         image: "/experience/HKI Sireca.webp",
     },
     {
-        id: 3,
+        id: 4,
         title: "MS Office Sertification",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/experience/Sekolahku.webp",
     },
     {
-        id: 4,
-        title: "PKM Competition Participant",
+        id: 5,
+        title: "PKM Competition",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/experience/PKM.webp",
     },
     {
-        id: 5,
-        title: "Student Leadership Training",
+        id: 6,
+        title: "Student Leadership",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/experience/LKMM.webp",
     },
     {
-        id: 6,
+        id: 7,
         title: "PKM Training Competition",
         description: "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/experience/PKMCen.webp",
@@ -46,7 +52,8 @@ export const ExperienceSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    After studying for approximately one year, I have successfully completed several experience as final assignments for some of my courses.
+                    I have successfully obtained several certifications and licenses 
+                    from organizational experiences, competitions, and projects.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

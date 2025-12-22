@@ -90,19 +90,19 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4"> Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="#" target="_blank">
+                                <a href="https://www.youtube.com/@rifqi_adrianto1603" target="_blank">
                                     <Youtube />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://www.linkedin.com/in/rifqiadrianto/" target="_blank">
                                     <Linkedin />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://github.com/rifqiadrianto007" target="_blank">
                                     <Github />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://www.instagram.com/rifqi_adrianto/" target="_blank">
                                     <Instagram />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://rifqiadrianto.blogspot.com/" target="_blank">
                                     <Rss />
                                 </a>
                             </div>
