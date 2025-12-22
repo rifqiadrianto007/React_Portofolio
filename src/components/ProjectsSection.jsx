@@ -7,7 +7,7 @@ const projects = [
         description: "AI-based web for detecting the number and health condition of chickens.",
         image: "/projects/SiCekam.webp",
         tags: ["Larevel", "TailwindCSS", "Python"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/SiCeKam",
     },
     {
@@ -17,7 +17,7 @@ const projects = [
             "Campus activity monitoring, scheduling, and information system.",
         image: "/projects/Schedulo.webp",
         tags: ["Laravel", "MySQL", "TailwindCSS"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/Schedulo",
     },
     {
@@ -27,7 +27,7 @@ const projects = [
             "Sistem restorasi citra menggunakan machine learning berbasing GAN.",
         image: "/projects/SIRECA.webp",
         tags: ["Laravel", "Python", "GAN"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/SIRECA_web",
     },
     {
@@ -37,7 +37,7 @@ const projects = [
             "A web-based application that measures BMI, menstruation, medication recommendations, and nearby health facilities.",
         image: "/projects/SehatIn.webp",
         tags: ["C#", "Python"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/Sehat.In",
     },
     {
@@ -47,7 +47,7 @@ const projects = [
             "The ReFind web-based application helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindWeb.webp",
         tags: ["HTML", "CSS", "MySQL"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/ReFind",
     },
     {
@@ -57,7 +57,7 @@ const projects = [
             "A warehouse inventory system integrated with goods flow records.",
         image: "/projects/SiBarang.webp",
         tags: ["Laravel", "TailwindCSS"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/SiBarang_Web",
     },
     {
@@ -67,7 +67,7 @@ const projects = [
             "The ReFind Android mobile apps that helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindApp.webp",
         tags: ["React", "Typescript", "Firebase"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/ReFind-App.",
     },
     {
@@ -77,7 +77,7 @@ const projects = [
             "A fake website of a game provider company called Epic Games, complete with various catalog and purchase features.",
         image: "/projects/EpicGames.webp",
         tags: ["HTML", "TailwindCSS"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/EpicGames.Clone",
     },
     {
@@ -97,7 +97,7 @@ const projects = [
             "A library book catalog system integrated with book identification and user borrowing history records.",
         image: "/projects/BooksAuthor.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/BooksAuthor",
     },
     {
@@ -107,7 +107,7 @@ const projects = [
             "A queueing system that applies a priority scale based on several aspects, such as members, order type, and order quantity.",
         image: "/projects/HEAP.webp",
         tags: ["Laravel", "Python"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/Sistem-Antrean-HEAP",
     },
     {
@@ -117,7 +117,7 @@ const projects = [
             "A simple puzzle memorization game built using Python's pyGames library.",
         image: "/projects/MemorizeGame.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
-        demoUrl: "#",
+        demoUrl: "/404",
         githubUrl: "https://github.com/rifqiadrianto007/Memoryze-Table-Game",
     },
     {
@@ -127,8 +127,8 @@ const projects = [
             "A system for recommending and predicting student graduation outcomes based on academic, non-academic, and attendance aspects",
         image: "/projects/academic.webp",
         tags: ["Laravel", "Python", "Matplotlib"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "/404",
+        githubUrl: "/404",
     },
 ];
 
