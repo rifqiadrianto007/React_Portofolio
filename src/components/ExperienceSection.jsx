@@ -3,7 +3,7 @@ const experience = [
         id: 1,
         title: "Abdidaya Ormawa 2025",
         description: "A beautiful landing page app using React and Tailwind.",
-        image: "/experience/sertif FS.webp",
+        image: "/experience/PPK Ormawa.webp",
     },
     {
         id: 2,

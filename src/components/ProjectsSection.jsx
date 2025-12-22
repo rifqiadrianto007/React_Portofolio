@@ -25,7 +25,7 @@ const projects = [
         title: "SIRECA",
         description:
             "Interactive analytics dashboard with data visualization and filtering capabilities.",
-        image: "/projects/projects.jpg",
+        image: "/projects/SIRECA.webp",
         tags: ["Laravel", "Python", "GAN"],
         demoUrl: "#",
         githubUrl: "https://github.com/rifqiadrianto007/SIRECA_web",
@@ -87,7 +87,7 @@ const projects = [
             "Full-featured e-commerce platform with user authentication and payment processing.",
         image: "/projects/beriTAU.webp",
         tags: ["Laravel", "Bootstrap"],
-        demoUrl: "#",
+        demoUrl: "https://beritauportal-rdk8usby3-rifqiadrianto007s-projects.vercel.app",
         githubUrl: "https://github.com/rifqiadrianto007/beriTAU_portal",
     },
     {

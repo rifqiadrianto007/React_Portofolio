@@ -78,7 +78,7 @@ export const AboutSection = () => {
                                 </div>
 
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Data Trainer</h4>
+                                    <h4 className="font-semibold text-lg">Machine Learning</h4>
                                     <p className="text-muted-foreground">
                                         Training and testing data to develop websites that support
                                         AI-based model.

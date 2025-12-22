@@ -11,7 +11,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 
 export const Home = () => {
     return (
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <>
             {/* Theme Toggle */}
             <ThemeToggle />
             {/* Background Effects */}
@@ -19,8 +19,9 @@ export const Home = () => {
 
             {/* Navbar */}
             <Navbar />
+
             {/* Main Content */}
-            <main>
+            <main className="min-h-screen bg-background text-foreground">
                 <HeroSection />
                 <AboutSection />
                 <SkillsSection />
@@ -29,8 +30,8 @@ export const Home = () => {
                 <ContactSection />
             </main>
 
-            {/* Footer */}
+            {/* Footer - Outside main container */}
             <Footer />
-        </div>
+        </>
     );
 };
