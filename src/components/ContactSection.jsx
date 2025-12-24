@@ -53,6 +53,7 @@ export const ContactSection = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                // emailJS API key
                 body: JSON.stringify({
                     service_id: 'service_pir47yu',
                     template_id: 'template_v6yyhxo',
