@@ -45,7 +45,7 @@ npm run build
 ## &#x20;Quick Preview
 
 Jika sudah di-deploy (contoh: GitHub Pages, Netlify, Vercel), kamu bisa tambahkan link deploy di sini, misalnya:
-[🔗 Lihat versi live](https://username.github.io/portofolio/)
+[🔗 Lihat versi live]([https://username.github.io/portofolio/](https://rifqi-adrianto.vercel.app/))
 
 ## Tentang Saya
 
