@@ -22,7 +22,7 @@ export const NotFound = () => {
                     {/* Error Message */}
                     <div className="space-y-4 opacity-0 animate-fade-in-delay-1">
                         <h2 className="text-2xl md:text-4xl font-bold text-white">
-                            Page not yet available
+                            Coming Soon
                         </h2>
                         <p className="text-slate-300 text-base md:text-lg max-w-md mx-auto">
                             I'm sorry, the developer will finish this page soon. Please return to the page{" "}
