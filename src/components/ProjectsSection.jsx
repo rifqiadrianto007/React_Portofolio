@@ -3,6 +3,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id: 1,
+        title: "SIMBA",
+        description: "AI-based web for detecting the number and health condition of chickens.",
+        image: "/projects/SIMBA.webp",
+        tags: ["Larevel", "TailwindCSS", "Python"],
+        demoUrl: "/404",
+        githubUrl: "https://github.com/rifqiadrianto007/SiCeKam",
+    },
+    {
+        id: 2,
         title: "SiCekam",
         description: "AI-based web for detecting the number and health condition of chickens.",
         image: "/projects/SiCekam.webp",
@@ -11,7 +20,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/SiCeKam",
     },
     {
-        id: 2,
+        id: 3,
         title: "Schedulo",
         description:
             "Campus activity monitoring, scheduling, and information system.",
@@ -21,7 +30,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Schedulo",
     },
     {
-        id: 3,
+        id: 4,
         title: "SIRECA",
         description:
             "Sistem restorasi citra menggunakan machine learning berbasing GAN.",
@@ -31,7 +40,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/SIRECA_web",
     },
     {
-        id: 4,
+        id: 5,
         title: "SehatIn",
         description:
             "A web-based application that measures BMI, menstruation, medication recommendations, and nearby health facilities.",
@@ -41,7 +50,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Sehat.In",
     },
     {
-        id: 5,
+        id: 6,
         title: "ReFind (Website)",
         description:
             "The ReFind web-based application helps with the process of reporting lost and found items on campus.",
@@ -51,7 +60,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/ReFind",
     },
     {
-        id: 6,
+        id: 7,
         title: "SiBarang",
         description:
             "A warehouse inventory system integrated with goods flow records.",
@@ -61,7 +70,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/SiBarang_Web",
     },
     {
-        id: 7,
+        id: 8,
         title: "ReFind App Mobile",
         description:
             "The ReFind Android mobile apps that helps with the process of reporting lost and found items on campus.",
@@ -71,7 +80,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/ReFind-App.",
     },
     {
-        id: 8,
+        id: 9,
         title: "Epic Games (Clone)",
         description:
             "A fake website of a game provider company called Epic Games, complete with various catalog and purchase features.",
@@ -81,7 +90,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/EpicGames.Clone",
     },
     {
-        id: 9,
+        id: 10,
         title: "BeriTAU",
         description:
             "A news portal that provides a variety of the latest news, complete with filter features by topic and release date.",
@@ -91,7 +100,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/beriTAU_portal",
     },
     {
-        id: 10,
+        id: 11,
         title: "Books Author Web",
         description:
             "A library book catalog system integrated with book identification and user borrowing history records.",
@@ -101,7 +110,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/BooksAuthor",
     },
     {
-        id: 11,
+        id: 12,
         title: "Queue System",
         description:
             "A queueing system that applies a priority scale based on several aspects, such as members, order type, and order quantity.",
@@ -111,7 +120,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Sistem-Antrean-HEAP",
     },
     {
-        id: 12,
+        id: 13,
         title: "Memorize Puzzle Game",
         description:
             "A simple puzzle memorization game built using Python's pyGames library.",
@@ -121,7 +130,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Memoryze-Table-Game",
     },
     {
-        id: 13,
+        id: 14,
         title: "Academic Count System",
         description:
             "A system for recommending and predicting student graduation outcomes based on academic, non-academic, and attendance aspects",
