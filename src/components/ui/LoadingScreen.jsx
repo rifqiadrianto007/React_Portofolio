@@ -34,7 +34,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                         }}
                     >
                         <span className="text-foreground">Rifqi</span>{' '}
-                        <span className="text-purple-500">Adrianto</span>
+                        <span className="text-blue-500">Adrianto</span>
                     </h1>
                     <p
                         className="text-sm text-muted-foreground"
@@ -50,7 +50,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                 <div className="relative">
                     <div className="w-full h-1.5 rounded-full overflow-hidden bg-secondary/30">
                         <div
-                            className="h-full bg-linear-to-r from-purple-500 via-purple-400 to-purple-500 rounded-full transition-all duration-75 ease-linear relative"
+                            className="h-full bg-linear-to-r from-blue-500 via-blue-400 to-blue-500 rounded-full transition-all duration-75 ease-linear relative"
                             style={{
                                 width: `${progress}%`,
                             }}
@@ -70,7 +70,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                         <span className="text-xs text-muted-foreground">
                             Loading...
                         </span>
-                        <span className="text-xs font-semibold text-purple-500">
+                        <span className="text-xs font-semibold text-blue-500">
                             {Math.round(progress)}%
                         </span>
                     </div>
@@ -81,7 +81,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                     {[0, 1, 2].map((i) => (
                         <div
                             key={i}
-                            className="w-2 h-2 rounded-full bg-purple-500"
+                            className="w-2 h-2 rounded-full bg-blue-500"
                             style={{
                                 animation: `bounce 1.4s infinite ease-in-out`,
                                 animationDelay: `${i * 0.16}s`,
