@@ -92,7 +92,7 @@ export const Navbar = () => {
                                         "hover:text-primary hover:-translate-y-0.5",
                                         // styling underline active section
                                         "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-1",
-                                        "after:bg-linear-to-r after:from-primary after:via-purple-500 after:to-primary",
+                                        "after:bg-linear-to-r after:from-primary after:via-blue-500 after:to-primary",
                                         "after:rounded-full after:transition-all after:duration-300",
                                         "hover:after:w-full",
                                         isActive && "text-primary after:w-full -translate-y-0.5"
