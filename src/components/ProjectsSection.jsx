@@ -61,6 +61,16 @@ const projects = [
     },
     {
         id: 7,
+        title: "Weather App",
+        description:
+            "A weather forecasting application that provides real-time weather updates and forecasts.",
+        image: "/projects/WeatherApp.webp",
+        tags: ["ReactJS", "TailwindCSS", "Open Weather API"],
+        demoUrl: "https://weather-app-one-chi-29.vercel.app/",
+        githubUrl: "https://github.com/rifqiadrianto007/Weather_App",
+    },
+    {
+        id: 8,
         title: "SiBarang",
         description:
             "A warehouse inventory system integrated with goods flow records.",
@@ -70,7 +80,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/SiBarang_Web",
     },
     {
-        id: 8,
+        id: 9,
         title: "ReFind App Mobile",
         description:
             "The ReFind Android mobile apps that helps with the process of reporting lost and found items on campus.",
@@ -80,7 +90,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/ReFind-App.",
     },
     {
-        id: 9,
+        id: 10,
         title: "Epic Games (Clone)",
         description:
             "A fake website of a game provider company called Epic Games, complete with various catalog and purchase features.",
@@ -90,7 +100,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/EpicGames.Clone",
     },
     {
-        id: 10,
+        id: 11,
         title: "BeriTAU",
         description:
             "A news portal that provides a variety of the latest news, complete with filter features by topic and release date.",
@@ -100,7 +110,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/beriTAU_portal",
     },
     {
-        id: 11,
+        id: 12,
         title: "Books Author Web",
         description:
             "A library book catalog system integrated with book identification and user borrowing history records.",
@@ -110,7 +120,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/BooksAuthor",
     },
     {
-        id: 12,
+        id: 13,
         title: "Queue System",
         description:
             "A queueing system that applies a priority scale based on several aspects, such as members, order type, and order quantity.",
@@ -120,7 +130,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Sistem-Antrean-HEAP",
     },
     {
-        id: 13,
+        id: 14,
         title: "Memorize Puzzle Game",
         description:
             "A simple puzzle memorization game built using Python's pyGames library.",
@@ -130,7 +140,7 @@ const projects = [
         githubUrl: "https://github.com/rifqiadrianto007/Memoryze-Table-Game",
     },
     {
-        id: 14,
+        id: 15,
         title: "Academic Count System",
         description:
             "A system for recommending and predicting student graduation outcomes based on academic, non-academic, and attendance aspects",
