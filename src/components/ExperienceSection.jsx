@@ -1,42 +1,54 @@
 const experience = [
     {
         id: 1,
+        title: "Intellectual Property Rights",
+        description: "Best 1 most innovative student organization.",
+        image: "/experience/HKI Capstone.webp",
+    },
+    {
+        id: 2,
         title: "Abdidaya Ormawa 2025",
         description: "Best 1 most innovative student organization.",
         image: "/experience/PPK Ormawa.webp",
     },
     {
-        id: 2,
+        id: 3,
+        title: "Badan Eksekutif Mahasiswa 2024/2025",
+        description: "Chairman of academic and non-academic competitions within the faculty.",
+        image: "/experience/Sertif BEM.webp",
+    },
+    {
+        id: 4,
         title: "Friendship 2025",
         description: "Chairman of academic and non-academic competitions within the faculty.",
         image: "/experience/sertif FS.webp",
     },
     {
-        id: 3,
+        id: 5,
         title: "Intellectual Property Rights",
         description: "Intellectual property documents for the GAN-based image restoration website (SIRECA).",
         image: "/experience/HKI Sireca.webp",
     },
     {
-        id: 4,
+        id: 6,
         title: "MS Office Sertification",
         description: "MS Office competency certification for data processing and reporting.",
         image: "/experience/Sekolahku.webp",
     },
     {
-        id: 5,
+        id: 7,
         title: "PKM Competition",
         description: "Participants in the student creativity week in the fields of research and humanities.",
         image: "/experience/PKM.webp",
     },
     {
-        id: 6,
+        id: 8,
         title: "Student Leadership",
         description: "Leadership training and certification for student organization members.",
         image: "/experience/LKMM.webp",
     },
     {
-        id: 7,
+        id: 9,
         title: "PKM Training Competition",
         description: "Participants in the training program for the student creativity week competition.",
         image: "/experience/PKMCen.webp",
@@ -52,7 +64,7 @@ export const ExperienceSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    I have successfully obtained several certifications and licenses 
+                    I have successfully obtained several certifications and licenses
                     from organizational experiences, competitions, and projects.
                 </p>
 
