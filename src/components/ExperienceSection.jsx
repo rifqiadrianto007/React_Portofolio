@@ -37,18 +37,24 @@ const experience = [
     },
     {
         id: 7,
+        title: "Problem Solving HackerRank",
+        description: "Taken part in problem solving challenges on the HackerRank platform.",
+        image: "/experience/Problem Solving HackerRank.webp",
+    },
+    {
+        id: 8,
         title: "PKM Competition",
         description: "Participants in the student creativity week in the fields of research and humanities.",
         image: "/experience/PKM.webp",
     },
     {
-        id: 8,
+        id: 9,
         title: "Student Leadership",
         description: "Leadership training and certification for student organization members.",
         image: "/experience/LKMM.webp",
     },
     {
-        id: 9,
+        id: 10,
         title: "PKM Training Competition",
         description: "Participants in the training program for the student creativity week competition.",
         image: "/experience/PKMCen.webp",
