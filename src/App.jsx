@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
 import { LoadingScreen } from "@/components/ui/LoadingScreen";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
+            <Analytics />
         </>
     );
 }
