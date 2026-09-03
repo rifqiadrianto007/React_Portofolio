@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
 const experience = [
     {
         id: 1,
@@ -62,6 +65,14 @@ const experience = [
 ];
 
 export const ExperienceSection = () => {
+    const experiencesPerPage = 6;
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = Math.ceil(experience.length / experiencesPerPage);
+    const visibleExperience = experience.slice(
+        (currentPage - 1) * experiencesPerPage,
+        currentPage * experiencesPerPage
+    );
+
     return (
         <section id="experience" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
@@ -75,9 +86,9 @@ export const ExperienceSection = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {experience.map((project, key) => (
+                    {visibleExperience.map((project) => (
                         <div
-                            key={key}
+                            key={project.id}
                             className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
                                 <img
@@ -94,6 +105,46 @@ export const ExperienceSection = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="flex justify-center items-center gap-2 mt-12">
+                    <button
+                        type="button"
+                        aria-label="Previous experience page"
+                        onClick={() => setCurrentPage((page) => page - 1)}
+                        disabled={currentPage === 1}
+                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                    >
+                        <ArrowLeft size={18} />
+                    </button>
+
+                    {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+                        (page) => (
+                            <button
+                                key={page}
+                                type="button"
+                                aria-label={`Go to experience page ${page}`}
+                                aria-current={currentPage === page ? "page" : undefined}
+                                onClick={() => setCurrentPage(page)}
+                                className={`min-w-9 h-9 px-2 rounded-md border text-sm transition-colors ${currentPage === page
+                                        ? "bg-primary text-primary-foreground border-primary"
+                                        : "text-foreground/80 hover:text-primary hover:border-primary"
+                                    }`}
+                            >
+                                {page}
+                            </button>
+                        )
+                    )}
+
+                    <button
+                        type="button"
+                        aria-label="Next experience page"
+                        onClick={() => setCurrentPage((page) => page + 1)}
+                        disabled={currentPage === totalPages}
+                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                    >
+                        <ArrowRight size={18} />
+                    </button>
                 </div>
             </div>
         </section>
