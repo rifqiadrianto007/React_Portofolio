@@ -1,4 +1,5 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
+import { ArrowLeft, ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
     {
@@ -152,6 +153,14 @@ const projects = [
 ];
 
 export const ProjectsSection = () => {
+    const projectsPerPage = 6;
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = Math.ceil(projects.length / projectsPerPage);
+    const visibleProjects = projects.slice(
+        (currentPage - 1) * projectsPerPage,
+        currentPage * projectsPerPage
+    );
+
     return (
         <section id="projects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
@@ -164,9 +173,9 @@ export const ProjectsSection = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, key) => (
+                    {visibleProjects.map((project) => (
                         <div
-                            key={key}
+                            key={project.id}
                             className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
                                 <img
@@ -178,7 +187,7 @@ export const ProjectsSection = () => {
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                                        <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}
@@ -207,6 +216,46 @@ export const ProjectsSection = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="flex justify-center items-center gap-2 mt-12">
+                    <button
+                        type="button"
+                        aria-label="Previous projects page"
+                        onClick={() => setCurrentPage((page) => page - 1)}
+                        disabled={currentPage === 1}
+                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                    >
+                        <ArrowLeft size={18} />
+                    </button>
+
+                    {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+                        (page) => (
+                            <button
+                                key={page}
+                                type="button"
+                                aria-label={`Go to projects page ${page}`}
+                                aria-current={currentPage === page ? "page" : undefined}
+                                onClick={() => setCurrentPage(page)}
+                                className={`min-w-9 h-9 px-2 rounded-md border text-sm transition-colors ${currentPage === page
+                                        ? "bg-primary text-primary-foreground border-primary"
+                                        : "text-foreground/80 hover:text-primary hover:border-primary"
+                                    }`}
+                            >
+                                {page}
+                            </button>
+                        )
+                    )}
+
+                    <button
+                        type="button"
+                        aria-label="Next projects page"
+                        onClick={() => setCurrentPage((page) => page + 1)}
+                        disabled={currentPage === totalPages}
+                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                    >
+                        <ArrowRight size={18} />
+                    </button>
                 </div>
 
                 <div className="text-center mt-12">
