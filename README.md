@@ -1,4 +1,4 @@
-# Portofolio Web — [Rifqi Adrianto / rifqiadrianto007]
+# Portofolio Web — Rifqi Adrianto / rifqiadrianto007
 
 Selamat datang di portofolio web pribadi saya! 🌐  
 Dibuat dengan React + Vite + TailwindCSS, ini adalah showcase dari project, skill, dan karya yang ingin saya bagikan.
@@ -52,6 +52,6 @@ Saya seorang Developer yang suka bikin aplikasi web ringan dengan tampilan moder
 
 * **Email:** [rifqiadrianto55@gmail.com](mailto:rifqiadrianto@gmail.com)
 * **LinkedIn:** [linkedin.com/in/rifqiadrianto](https://www.linkedin.com/in/rifqiadrianto/)
-* **Instagram (opsional):** @rifqi_adrianto
+* **Instagram:** @rifqi_adrianto
 
 ---
