@@ -43,9 +43,7 @@ npm run build
 ````
 
 ## &#x20;Quick Preview
-
-Jika sudah di-deploy (contoh: GitHub Pages, Netlify, Vercel), kamu bisa tambahkan link deploy di sini :
-[https://rifqi-adrianto.vercel.app/](https://rifqi-adrianto.vercel.app/)
+[https://rifqiadrianto.web.id/](https://rifqiadrianto.web.id/)
 
 ## Tentang Saya
 
@@ -57,6 +55,3 @@ Saya seorang Developer yang suka bikin aplikasi web ringan dengan tampilan moder
 * **Instagram (opsional):** @rifqi_adrianto
 
 ---
-
-
-[1]: https://github.com/rissss21/portofolio "GitHub - rissss21/portofolio"
