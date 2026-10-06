@@ -94,6 +94,7 @@ export const ExperienceSection = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
 
@@ -113,7 +114,7 @@ export const ExperienceSection = () => {
                         aria-label="Previous experience page"
                         onClick={() => setCurrentPage((page) => page - 1)}
                         disabled={currentPage === 1}
-                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                        className="min-h-11 min-w-11 p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
                     >
                         <ArrowLeft size={18} />
                     </button>
@@ -126,7 +127,7 @@ export const ExperienceSection = () => {
                                 aria-label={`Go to experience page ${page}`}
                                 aria-current={currentPage === page ? "page" : undefined}
                                 onClick={() => setCurrentPage(page)}
-                                className={`min-w-9 h-9 px-2 rounded-md border text-sm transition-colors ${currentPage === page
+                                className={`min-w-11 min-h-11 px-2 rounded-md border text-sm transition-colors ${currentPage === page
                                         ? "bg-primary text-primary-foreground border-primary"
                                         : "text-foreground/80 hover:text-primary hover:border-primary"
                                     }`}
@@ -141,7 +142,7 @@ export const ExperienceSection = () => {
                         aria-label="Next experience page"
                         onClick={() => setCurrentPage((page) => page + 1)}
                         disabled={currentPage === totalPages}
-                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                        className="min-h-11 min-w-11 p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
                     >
                         <ArrowRight size={18} />
                     </button>

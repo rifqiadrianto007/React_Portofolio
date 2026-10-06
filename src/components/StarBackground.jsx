@@ -1,43 +1,49 @@
 import { useEffect, useState } from "react";
 
-// id, size, x, y, opacity, animationDuration
-// id, size, x, y, delay, animationDuration
+const getStarCount = (width, height) =>
+    Math.floor((width * height) / 10000);
+
+const createStars = (numberOfStars) =>
+    Array.from({ length: numberOfStars }, (_, id) => ({
+        id,
+        size: Math.random() * 3 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        opacity: Math.random() * 0.5 + 0.5,
+        animationDuration: Math.random() * 4 + 2,
+    }));
 
 export const StarBackground = () => {
-    const [stars, setStars] = useState([]);
+    const [stars, setStars] = useState(() =>
+        createStars(getStarCount(window.innerWidth, window.innerHeight))
+    );
 
     useEffect(() => {
-        generateStars();
+        let resizeTimeout;
 
         const handleResize = () => {
-            generateStars();
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                const nextCount = getStarCount(
+                    window.innerWidth,
+                    window.innerHeight
+                );
+
+                setStars((currentStars) =>
+                    currentStars.length === nextCount
+                        ? currentStars
+                        : createStars(nextCount)
+                );
+            }, 150);
         };
 
         window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener("resize", handleResize);
+        return () => {
+            clearTimeout(resizeTimeout);
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
-
-    const generateStars = () => {
-        const numberOfStars = Math.floor(
-            (window.innerWidth * window.innerHeight) / 10000
-        );
-
-        const newStars = [];
-
-        for (let i = 0; i < numberOfStars; i++) {
-            newStars.push({
-                id: i,
-                size: Math.random() * 3 + 1,
-                x: Math.random() * 100,
-                y: Math.random() * 100,
-                opacity: Math.random() * 0.5 + 0.5,
-                animationDuration: Math.random() * 4 + 2,
-            });
-        }
-
-        setStars(newStars);
-    };
 
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">

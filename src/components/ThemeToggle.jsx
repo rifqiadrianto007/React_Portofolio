@@ -2,7 +2,7 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-export const ThemeToggle = ({ isScrolled }) => {
+export const ThemeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [mounted, setMounted] = useState(false);
 
@@ -36,7 +36,7 @@ export const ThemeToggle = ({ isScrolled }) => {
     if (!mounted) {
         return (
             <button
-                className="p-2 rounded-full transition-all duration-300 hover:bg-primary/10"
+                className="min-h-11 min-w-11 p-2 rounded-full transition-all duration-300 hover:bg-primary/10"
                 aria-label="Toggle theme"
             >
                 <div className="h-6 w-6" />
@@ -48,7 +48,7 @@ export const ThemeToggle = ({ isScrolled }) => {
         <button
             onClick={toggleTheme}
             className={cn(
-                "relative p-2 rounded-full transition-all duration-300",
+                "relative min-h-11 min-w-11 p-2 rounded-full transition-all duration-300",
                 "hover:bg-primary/10 hover:scale-110 hover:rotate-12",
                 "focus:outline-none focus:ring-2 focus:ring-primary/50",
                 "group"

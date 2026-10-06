@@ -29,6 +29,7 @@ export const AboutSection = () => {
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="https://www.linkedin.com/in/rifqiadrianto/"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="cosmic-button">
                                 Get In Touch
                             </a>
@@ -36,6 +37,7 @@ export const AboutSection = () => {
                             <a
                                 href="https://drive.google.com/drive/folders/1GngMZy_JQKB-N6-l0eq7mrTDBKrwpqDc?usp=sharing" // linked to gdrive
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 Download CV
                             </a>

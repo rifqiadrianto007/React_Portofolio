@@ -102,12 +102,12 @@ export const Navbar = () => {
                             )
                         })}
                     </div>
-                    <ThemeToggle isScrolled={isScrolled} />
+                    <ThemeToggle />
                 </div>
 
                 {/* Mobile: Theme Toggle + Menu Button */}
                 <div className="md:hidden flex items-center gap-2">
-                    <ThemeToggle isScrolled={isScrolled} />
+                    <ThemeToggle />
                     <button
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                         className="p-2 text-foreground z-50 rounded-full hover:bg-primary/10 transition-colors"

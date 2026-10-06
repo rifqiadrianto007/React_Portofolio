@@ -34,7 +34,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                         }}
                     >
                         <span className="text-foreground">Rifqi</span>{' '}
-                        <span className="text-blue-500">Adrianto</span>
+                        <span className="text-primary">Adrianto</span>
                     </h1>
                     <p
                         className="text-sm text-muted-foreground"
@@ -57,9 +57,9 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                         >
                             {/* Shimmer effect */}
                             <div
-                                className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-30"
+                                className="loading-shimmer-motion absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-30"
                                 style={{
-                                    animation: 'shimmer 1.5s infinite',
+                                    animationDuration: '1.5s',
                                 }}
                             />
                         </div>
@@ -70,7 +70,7 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                         <span className="text-xs text-muted-foreground">
                             Loading...
                         </span>
-                        <span className="text-xs font-semibold text-blue-500">
+                        <span className="text-xs font-semibold text-primary">
                             {Math.round(progress)}%
                         </span>
                     </div>
@@ -81,9 +81,8 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
                     {[0, 1, 2].map((i) => (
                         <div
                             key={i}
-                            className="w-2 h-2 rounded-full bg-blue-500"
+                            className="loading-dot-motion w-2 h-2 rounded-full bg-primary"
                             style={{
-                                animation: `bounce 1.4s infinite ease-in-out`,
                                 animationDelay: `${i * 0.16}s`,
                             }}
                         />
@@ -112,15 +111,19 @@ export const LoadingScreen = ({ onLoadingComplete, duration = 2000 }) => {
           }
         }
 
-        @keyframes bounce {
+        @keyframes loading-pulse {
           0%, 80%, 100% {
-            transform: scale(0);
+            transform: scale(0.6);
             opacity: 0.5;
           }
           40% {
             transform: scale(1);
             opacity: 1;
           }
+        }
+
+        .loading-dot-motion {
+          animation: loading-pulse 1.4s infinite ease-in-out;
         }
       `}</style>
         </div>

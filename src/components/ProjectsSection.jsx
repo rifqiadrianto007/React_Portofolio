@@ -8,7 +8,7 @@ const projects = [
         description: "Inventory and employee management system for regional public hospitals.",
         image: "/projects/SIMBA.webp",
         tags: ["Laravel", "REST API", "ReactJS"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/Inventory-RSBalung-SIMBA",
     },
     {
@@ -17,7 +17,7 @@ const projects = [
         description: "AI-based web for detecting the number and health condition of chickens.",
         image: "/projects/SiCekam.webp",
         tags: ["Laravel", "TailwindCSS", "Python"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/SiCeKam",
     },
     {
@@ -27,7 +27,7 @@ const projects = [
             "Campus activity monitoring, scheduling, and information system.",
         image: "/projects/Schedulo.webp",
         tags: ["Laravel", "MySQL", "TailwindCSS"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/Schedulo",
     },
     {
@@ -37,7 +37,7 @@ const projects = [
             "Sistem restorasi citra menggunakan machine learning berbasing GAN.",
         image: "/projects/SIRECA.webp",
         tags: ["Laravel", "Python", "GAN"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/SIRECA_web",
     },
     {
@@ -47,7 +47,7 @@ const projects = [
             "A web-based application that measures BMI, menstruation, medication recommendations, and nearby health facilities.",
         image: "/projects/SehatIn.webp",
         tags: ["C#", "Python"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/Sehat.In",
     },
     {
@@ -57,7 +57,7 @@ const projects = [
             "The ReFind web-based application helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindWeb.webp",
         tags: ["HTML", "CSS", "MySQL"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/ReFind",
     },
     {
@@ -77,7 +77,7 @@ const projects = [
             "A warehouse inventory system integrated with goods flow records.",
         image: "/projects/SiBarang.webp",
         tags: ["Laravel", "TailwindCSS"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/SiBarang_Web",
     },
     {
@@ -87,7 +87,7 @@ const projects = [
             "The ReFind Android mobile apps that helps with the process of reporting lost and found items on campus.",
         image: "/projects/ReFindApp.webp",
         tags: ["React", "Typescript", "Firebase"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/ReFind-App.",
     },
     {
@@ -97,7 +97,7 @@ const projects = [
             "A fake website of a game provider company called Epic Games, complete with various catalog and purchase features.",
         image: "/projects/EpicGames.webp",
         tags: ["HTML", "TailwindCSS"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/EpicGames.Clone",
     },
     {
@@ -117,7 +117,7 @@ const projects = [
             "A library book catalog system integrated with book identification and user borrowing history records.",
         image: "/projects/BooksAuthor.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/BooksAuthor",
     },
     {
@@ -127,7 +127,7 @@ const projects = [
             "A queueing system that applies a priority scale based on several aspects, such as members, order type, and order quantity.",
         image: "/projects/HEAP.webp",
         tags: ["Laravel", "Python"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/Sistem-Antrean-HEAP",
     },
     {
@@ -137,7 +137,7 @@ const projects = [
             "A simple puzzle memorization game built using Python's pyGames library.",
         image: "/projects/MemorizeGame.webp",
         tags: ["Laravel", "TailwindCSS", "MySQL"],
-        demoUrl: "/404",
+        demoUrl: null,
         githubUrl: "https://github.com/rifqiadrianto007/Memoryze-Table-Game",
     },
     {
@@ -147,8 +147,8 @@ const projects = [
             "A system for recommending and predicting student graduation outcomes based on academic, non-academic, and attendance aspects",
         image: "/projects/academic.webp",
         tags: ["Laravel", "Python", "Matplotlib"],
-        demoUrl: "/404",
-        githubUrl: "/404",
+        demoUrl: null,
+        githubUrl: null,
     },
 ];
 
@@ -181,6 +181,7 @@ export const ProjectsSection = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
 
@@ -199,18 +200,26 @@ export const ProjectsSection = () => {
                                 </p>
                                 <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
-                                        <a
-                                            href={project.demoUrl}
-                                            target="_blank"
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                            <ExternalLink size={20} />
-                                        </a>
-                                        <a
-                                            href={project.githubUrl}
-                                            target="_blank"
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                            <Github size={20} />
-                                        </a>
+                                        {project.demoUrl && (
+                                            <a
+                                                href={project.demoUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`View ${project.title} live demo`}
+                                                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-300">
+                                                <ExternalLink size={20} />
+                                            </a>
+                                        )}
+                                        {project.githubUrl && (
+                                            <a
+                                                href={project.githubUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`View ${project.title} source code on GitHub`}
+                                                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-300">
+                                                <Github size={20} />
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +233,7 @@ export const ProjectsSection = () => {
                         aria-label="Previous projects page"
                         onClick={() => setCurrentPage((page) => page - 1)}
                         disabled={currentPage === 1}
-                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                        className="min-h-11 min-w-11 p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
                     >
                         <ArrowLeft size={18} />
                     </button>
@@ -237,7 +246,7 @@ export const ProjectsSection = () => {
                                 aria-label={`Go to projects page ${page}`}
                                 aria-current={currentPage === page ? "page" : undefined}
                                 onClick={() => setCurrentPage(page)}
-                                className={`min-w-9 h-9 px-2 rounded-md border text-sm transition-colors ${currentPage === page
+                                className={`min-w-11 min-h-11 px-2 rounded-md border text-sm transition-colors ${currentPage === page
                                         ? "bg-primary text-primary-foreground border-primary"
                                         : "text-foreground/80 hover:text-primary hover:border-primary"
                                     }`}
@@ -252,7 +261,7 @@ export const ProjectsSection = () => {
                         aria-label="Next projects page"
                         onClick={() => setCurrentPage((page) => page + 1)}
                         disabled={currentPage === totalPages}
-                        className="p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                        className="min-h-11 min-w-11 p-2 rounded-md border text-foreground/80 hover:text-primary hover:border-primary transition-colors disabled:opacity-40 disabled:pointer-events-none"
                     >
                         <ArrowRight size={18} />
                     </button>
@@ -262,6 +271,7 @@ export const ProjectsSection = () => {
                     <a
                         className="cosmic-button w-fit flex items-center mx-auto gap-2"
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/rifqiadrianto007">
                         Check My Github <ArrowRight size={16} />
                     </a>
