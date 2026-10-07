@@ -1,3 +1,4 @@
+
 import {
     Github,
     Instagram,
@@ -45,8 +46,6 @@ export const ContactSection = () => {
         setIsSubmitting(true);
 
         try {
-            console.log('Sending email with data:', formData); // Debug log
-
             // Mengirim email menggunakan EmailJS
             const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
                 method: 'POST',
@@ -66,8 +65,6 @@ export const ContactSection = () => {
                 })
             });
 
-            console.log('Response status:', response.status); // Debug log
-
             if (response.ok || response.status === 200) {
                 toast({
                     title: "Message sent!",
@@ -76,12 +73,10 @@ export const ContactSection = () => {
                 // Reset form setelah berhasil
                 setFormData({ name: '', email: '', message: '' });
             } else {
-                const errorText = await response.text();
-                console.error('Error response:', errorText); // Debug log
                 throw new Error('Failed to send message');
             }
         } catch (error) {
-            console.error('Error sending email:', error); // Debug log
+            console.error('Error sending email:', error);
             toast({
                 title: "Failed to send message",
                 description: "Something went wrong. Please try again later or contact me directly via email.",
@@ -142,9 +137,9 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium"> Location</h4>
-                                    <a className="text-muted-foreground hover:text-primary transition-colors">
+                                    <span className="text-muted-foreground">
                                         Jember, East Java, Indonesia
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -152,19 +147,44 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4"> Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="https://www.youtube.com/@rifqi_adrianto1603" target="_blank">
+                                <a
+                                    href="https://www.youtube.com/@rifqi_adrianto1603"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Rifqi on YouTube"
+                                    className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2">
                                     <Youtube />
                                 </a>
-                                <a href="https://www.linkedin.com/in/rifqiadrianto/" target="_blank">
+                                <a
+                                    href="https://www.linkedin.com/in/rifqiadrianto/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Rifqi on LinkedIn"
+                                    className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2">
                                     <Linkedin />
                                 </a>
-                                <a href="https://github.com/rifqiadrianto007" target="_blank">
+                                <a
+                                    href="https://github.com/rifqiadrianto007"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Rifqi on GitHub"
+                                    className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2">
                                     <Github />
                                 </a>
-                                <a href="https://www.instagram.com/rifqi_adrianto/" target="_blank">
+                                <a
+                                    href="https://www.instagram.com/rifqi_adrianto/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit Rifqi on Instagram"
+                                    className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2">
                                     <Instagram />
                                 </a>
-                                <a href="https://rifqiadrianto.blogspot.com/" target="_blank">
+                                <a
+                                    href="https://rifqiadrianto.blogspot.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Read Rifqi's blog"
+                                    className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-foreground/80 hover:text-primary transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2">
                                     <Rss />
                                 </a>
                             </div>
@@ -174,7 +194,7 @@ export const ContactSection = () => {
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6"> Give Me Your Best Messeage</h3>
 
-                        <div className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label
                                     htmlFor="name"
@@ -188,7 +208,7 @@ export const ContactSection = () => {
                                     required
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="Your name..."
                                 />
                             </div>
@@ -206,7 +226,7 @@ export const ContactSection = () => {
                                     required
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="abc123@gmail.com"
                                 />
                             </div>
@@ -224,13 +244,13 @@ export const ContactSection = () => {
                                     rows="4"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                                     placeholder="Hello, I'd like to talk about..."
                                 />
                             </div>
 
                             <button
-                                onClick={handleSubmit}
+                                type="submit"
                                 disabled={isSubmitting}
                                 className={cn(
                                     "cosmic-button w-full flex items-center justify-center gap-2",
@@ -239,7 +259,7 @@ export const ContactSection = () => {
                                 {isSubmitting ? "Sending..." : "Send Message"}
                                 <Send size={16} />
                             </button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
