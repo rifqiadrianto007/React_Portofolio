@@ -67,7 +67,7 @@ const projects = [
             "A weather forecasting application that provides real-time weather updates and forecasts.",
         image: "/projects/WeatherApp.webp",
         tags: ["ReactJS", "TailwindCSS", "Open Weather API"],
-        demoUrl: "https://weather-app-one-chi-29.vercel.app/",
+        demoUrl: "https://kondisee.vercel.app/",
         githubUrl: "https://github.com/rifqiadrianto007/Weather_App",
     },
     {
@@ -107,7 +107,7 @@ const projects = [
             "A news portal that provides a variety of the latest news, complete with filter features by topic and release date.",
         image: "/projects/beriTAU.webp",
         tags: ["Laravel", "Bootstrap"],
-        demoUrl: "https://beritauportal-rdk8usby3-rifqiadrianto007s-projects.vercel.app",
+        demoUrl: "https://beritauportal.vercel.app/",
         githubUrl: "https://github.com/rifqiadrianto007/beriTAU_portal",
     },
     {
@@ -247,8 +247,8 @@ export const ProjectsSection = () => {
                                 aria-current={currentPage === page ? "page" : undefined}
                                 onClick={() => setCurrentPage(page)}
                                 className={`min-w-11 min-h-11 px-2 rounded-md border text-sm transition-colors ${currentPage === page
-                                        ? "bg-primary text-primary-foreground border-primary"
-                                        : "text-foreground/80 hover:text-primary hover:border-primary"
+                                    ? "bg-primary text-primary-foreground border-primary"
+                                    : "text-foreground/80 hover:text-primary hover:border-primary"
                                     }`}
                             >
                                 {page}
